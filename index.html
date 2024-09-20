@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueres.css"/>
+</head>
+
+<body> <!--BODY START-->
+    <nav id="desktop-nav">
+        <div class="logo">Welcome To My Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--HAMBURGER MENU INFO (mobile devices)-->
+    <nav id="hamburger-nav">
+        <div class ="logo">Shilah Watson</div>
+        <div class ="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <!--LINES OF HAMBURGER MENU-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!--START OF SECTIONS-->
+
+    <!--Profile Picture-->
+    <section id = "profile">
+        <div class="section__pic-container">
+            <img src="./assets/sProfile-pic.png" alt="Shilah profile pic" class="profile-pic"/>
+        </div>
+        <!--Intro for profile picture-->
+        <div class="section__text"> 
+            <p class="section__text__p1">Hello,Im</p>
+            <h1 class="title">Shilah Watson</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <!--Buttons-->
+            <div class="btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">My Resume</button>
+                <button class = "btn btn-color-1" onclick="location.href='./#contact'">My Contact</button>
+            </div>
+            <!--Image Links(through photo)-->
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt = "My Linkedin profile"
+                class = "icon" onclick="location.href='https://www.linkedin.com/in/shilah-watson-609919244/'"/> 
+                <img src="./assets/github.png" alt = "My Github profile"
+                class = "icon" onclick="location.href='https://github.com/shilahw'"/> 
+            </div>
+    </section>
+    <!--ABOUT SECTION-->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <img src="./assets/shilahAbout.png"alt ="profile picture" class="about-pic"/>
+            <div class="section__pic-container">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png"alt ="experience icon" class="icon"/>
+                        <h3>Student</h3>
+                        <p>3rd Year<br/> Computer Science Major</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"alt ="education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Spelman College <br/>C.O '26<br/>3.58 GPA</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am passionate about combining the worlds of technology and pure enjoyment for all ages! 
+                        My intrest focus mainly on front end design, but are not minimized to such. 
+                        I am open to all positions that involve technology and am always ready to learn new techniques to add to my skillset.
+                        As a junior in college, I have already "dipped my toes" into multiple technology feilds going from mainstream tech to sports. 
+                        I strive to create the best for all people to enjoy all through technology. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+    </section>
+    <!--SKILLS SECTION-->
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Languages Include</h2>
+                    <div class="article-container">
+                        <!--all of my known coding languages-->
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>PYTHON</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <!--EXPERIENCE SECTION-->
+    <section id="experience">
+        <p class="section__text__p1">My Experience</p>
+        <h1 class="section__text__p1">So Far</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                <div class = "article-container">
+                    <img src="./assets/disneyShilah.png" alt="experience 1"class="experience-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Disney</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://sites.disney.com/disneycareers/disney-on-the-yard/'">Disney On The Yard</button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class = "article-container">
+                    <img src="./assets/google1.png" alt="experience 2"class="experience-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Google</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://buildyourfuture.withgoogle.com/programs/tech-exchange'">Google TechX</button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class = "article-container">
+                    <img src="./assets/falcon2.png" alt="experience 3"class="experience-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">ATL Falcons</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.atlantafalcons.com/community/hbcu-fellowship-program '">HBCU COHORT</button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class = "article-container">
+                    <img src="./assets/codehouse1.png" alt="experience 4"class="experience-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">CodeHouse</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.thecodehouse.org/codehouse-scholars '">CODEHOUSE</button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class = "article-container">
+                    <img src="./assets/airplane3.png" alt="experience 5"class="experience-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Alaska Airlines</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://news.alaskaair.com/alaska-airlines/the-faces-of-our-commitment-aircraft/'">OUR COMMITMENT</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <!--CONTACT SECTION-->
+    <section id="contact">
+        <p class="section__text__p1">Lets Get Connected!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon"class="icon contact-icon email-icon"/>
+                <p><a href="mailto:shilahwatson.26@gmail.com">shilahwatson.26@gmail.com</a></p>
+
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon"class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/shilah-watson-609919244/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+     <!--END OF SECTIONS-->
+     <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shilah Watson.All Rights Reserved</p>
+     </footer>
+    <!--HAMBURGER MENU INFO END-->
+    <script src="script.js"></script>
+</body> <!--BODY END-->
+
+</html>
